@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <!-- <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+    <link type="text/css" href="../Res/bootstrap.min.css" rel="stylesheet">
+    <script src="../Res/jquery-2.1.4.min.js"></script>
+    <script src="../Res/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script>
+    $(document).ready(function () {
+        //$("#modal-1").modal();
+    });
+
+</script>
+
+模态框
+<div class="container">
+
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-1">
+        启动小模态框
+    </button><br/>
+
+    <div class="modal fade bs-example-modal-sm" id="modal-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button class="close" type="button"
+                            data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                    <h4 class="modal-title">modal-title</h4>
+                </div>
+
+                <div class="modal-body">
+                    modal-body
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-2">
+        启动大模态框
+    </button><br/>
+
+    <div class="modal fade bs-example-modal-lg" id="modal-2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button class="close" type="button"
+                            data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                    <h4 class="modal-title">modal-title</h4>
+                </div>
+
+                <div class="modal-body">
+                    modal-body
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-primary" type="button"
+            data-toggle="modal" data-target="#modal-3">
+        网格模态框
+    </button><br/>
+
+    <div class="modal fade" id="modal-3" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button class="close" type="button"
+                            data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                    <h4 class="modal-title">modal-title</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">col-md-4</div>
+                            <div class="col-md-4 col-md-offset-4">col-md-4 col-md-offset-4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">col-md-4</div>
+                            <div class="col-md-4 col-md-offset-4">col-md-4 col-md-offset-4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">col-md-4</div>
+                            <div class="col-md-4 col-md-offset-4">col-md-4 col-md-offset-4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <button class="btn btn-primary" type="button"
+            data-toggle="modal" data-target="#modal-4" data-whatever="@email">
+        验证模态框@email
+    </button><br/>
+</div>
+<div class="modal fade bs-example-modal-lg" id="modal-4">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button class="close" type="button"
+                        data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                </button>
+                <h4 class="modal-title">modal-title</h4>
+            </div>
+
+            <div class="modal-body">
+                <form class="form-group">
+                    <label class="control-label" for="email-name">email</label>
+                    <input type="text" class="form-control" id="email-name">
+                </form>
+                <form class="form-group">
+                    <label class="control-label" for="email-pwd">pwd</label>
+                    <textarea class="form-control" id="email-pwd"></textarea>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"  data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+下拉菜单
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapse-1" aria-haspopup="true"
+                        aria-expanded="false" type="button">
+                    <span class="sr-only">navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!--1.品牌图标-->
+                <a class="navbar-brand">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a>Link1</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" type="button"
+                           data-toggle="dropdown" role="dropdown"
+                           aria-expanded="false" aria-haspopup="true">
+                            下拉1<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>1</a></li>
+                            <li><a>1</a></li>
+                            <li class="divider"><a></a></li>
+                            <li><a>1</a></li>
+                        </ul>
+                    </li>
+
+                    <!--2.表单-->
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                        </div>
+                        <button class="btn btn-default">确定</button>
+
+                    </form>
+
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                           role="button" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a>1</a></li>
+                            <li><a>1</a></li>
+                            <li><a>1</a></li>
+                            <li><a>1</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+</div>
+
+
+
+
+
+滚动插件
+<div class="container">
+
+    <nav id="n2" class="navbar navbar-default navbar-static" role="navigation">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse"
+                    data-target="#collapse-2">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">教程名称</a>
+        </div>
+
+        <div id="collapse-2" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#iOS">iOS</a></li>
+                <li><a href="#SVN">SVN</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Java<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown2">
+                        <li><a href="#1">1</a></li>
+                        <li><a href="#2">2</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#3">3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div data-spy="scroll" data-target="#n2" data-offset="0"
+         style="height: 200px;overflow: auto;position: relative;">
+        <h4 id="iOS">iOS</h4>
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+        </p>
+        <h4 id="SVN">SVN</h4>
+        <p>Apache Subversion，通常缩写为 SVN，是一款开源的版本控制系统软件。Subversion 由 CollabNet 公司在 2000 年创建。但是现在它已经发展为 Apache Software Foundation 的一个项目，因此拥有丰富的开发人员和用户社区。
+        </p>
+        <h4 id="1">1</h4>
+        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。
+        </p>
+        <h4 id="2">2</h4>
+        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+        </p>
+        <h4 id="3">3</h4>
+        <p>Spring 框架是一个开源的 Java 平台，为快速开发功能强大的 Java 应用程序提供了完备的基础设施支持。
+        </p>
+        <p>Spring 框架最初是由 Rod Johnson 编写的，在 2003 年 6 月首次发布于 Apache 2.0 许可证下。
+        </p>
+    </div>
+
+
+</div>
+
+
+
+
+标签页插件
+<div class="container">
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#i1">W3C Home</a></li>
+        <li><a data-toggle="tab" href="#i2">iOS</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Andorid<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#i3" data-toggle="tab">1</a></li>
+                <li><a href="#i4" data-toggle="tab">2</a></li>
+                <li><a href="#i5" data-toggle="tab">3</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="i1">
+            <h4 >iOS1</h4>
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="i2">
+            <h4 >iOS2</h4>
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="i3">
+            <h4 >iOS3</h4>
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="i4">
+            <h4 >iOS4</h4>
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+        </div>
+
+        <div class="tab-pane fade" id="i5">
+            <h4 >iOS5</h4>
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+提示工具
+<div class="container">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="默认tip">默认tip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="left tip" data-placement="left">left tip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="top tip" data-placement="top">top tip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="right tip" data-placement="right">tight tip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="bottom tip" data-placement="bottom">bottom tip</button>
+</div>
+<script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+
+
+弹出框插件
+<div class="container" style="padding: 100px 50px 10px">
+
+    <button type="button" class="btn btn-default" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="top"
+            data-content="顶部Popover的内容">
+        顶部的Popover
+    </button>
+
+    <button type="button" class="btn btn-default" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="left"
+            data-content="左侧Popover的内容">
+        左侧的Popover
+    </button>
+
+    <button type="button" class="btn btn-default" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="右侧Popover的内容">
+        右侧的Popover
+    </button>
+
+    <button type="button" class="btn btn-default" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="bottom"
+            data-content="底部Popover的内容">
+        底部的Popover
+    </button>
+</div>
+<script>
+    $(function () {
+        $("[data-toggle='popover']").popover();
+    });
+</script>
+
+
+
+警告框插件
+<div class="container">
+
+    <div class="alert alert-danger">
+        <a class="close" data-miss="alert">&times;</a>
+        <strong>alert-danger</strong>
+    </div>
+
+    <div class="alert alert-success">
+        <a class="close" data-miss="alert">&times;</a>
+        <strong>alert-success</strong>
+    </div>
+
+    <div class="alert alert-warning">
+        <a class="close" data-miss="alert">&times;</a>
+        <strong>alert-warning</strong>
+    </div>
+
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            &times;
+        </button>
+        <!--<a class="close" href="#" data-miss="alert">&times;</a>-->
+        <strong>alert-info(可删除)</strong>
+    </div>
+
+</div>
+
+
+<br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>
